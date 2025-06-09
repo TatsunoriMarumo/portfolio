@@ -1,26 +1,139 @@
+/* ---------- Load external Tailwind config ---------- */
+@config "../tailwind.config.ts";
+
+/* ---------- Tailwind v4 core (preflight + utilities) ---------- */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* ----------------------------------------------------------------
+   Design tokens
+   ---------------------------------------------------------------- */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Light theme (default) */
+    --background: 210 20% 97%;
+    --foreground: 210 25% 15%;
+
+    --card: 210 20% 97%;
+    --card-foreground: 210 25% 15%;
+
+    --popover: 210 20% 97%;
+    --popover-foreground: 210 25% 15%;
+
+    --primary: 210 25% 15%;
+    --primary-foreground: 210 20% 97%;
+
+    --secondary: 180 12% 30%;
+    --secondary-foreground: 210 20% 97%;
+
+    --muted: 210 20% 97%;
+    --muted-foreground: 210 25% 15%;
+
+    --accent: 200 35% 75%;
+    --accent-foreground: 210 25% 15%;
+
+    --destructive: 210 25% 15%;
+    --destructive-foreground: 210 20% 97%;
+
+    --border: 150 15% 85%;
+    --input: 150 15% 85%;
+    --ring: 210 25% 15%;
+
+    --radius: 0.5rem;
+  }
+
+  /* Dark-mode overrides (activated via `.dark` class) */
+  .dark {
+    --background: 210 25% 15%;
+    --foreground: 210 20% 97%;
+
+    --card: 210 25% 15%;
+    --card-foreground: 210 20% 97%;
+
+    --popover: 210 25% 15%;
+    --popover-foreground: 210 20% 97%;
+
+    --primary: 210 20% 97%;
+    --primary-foreground: 210 25% 15%;
+
+    --secondary: 180 12% 30%;
+    --secondary-foreground: 210 20% 97%;
+
+    --muted: 210 25% 20%;
+    --muted-foreground: 210 20% 97%;
+
+    --accent: 200 35% 75%;
+    --accent-foreground: 210 25% 15%;
+
+    --destructive: 210 25% 15%;
+    --destructive-foreground: 210 20% 97%;
+
+    --border: 210 25% 20%;
+    --input: 210 25% 20%;
+    --ring: 210 20% 97%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ----------------------------------------------------------------
+   Base styles & resets
+   ---------------------------------------------------------------- */
+@layer base {
+
+  /* Give every element the semantic border color */
+  *,
+  ::before,
+  ::after {
+    @apply border-border;
+  }
+
+  /* Body defaults */
+  body {
+    @apply bg-background text-foreground antialiased;
+    min-height: 100vh;
+
+    /* Fallback for environments without Tailwind utilities */
+    background-color: hsl(var(--background));
+  }
+}
+
+/* ----------------------------------------------------------------
+   Custom utilities (animations, container, …)
+   ---------------------------------------------------------------- */
+@layer utilities {
+
+  /* Accordion animations */
+  @keyframes accordion-down {
+    from {
+      height: 0
+    }
+
+    to {
+      height: var(--radix-accordion-content-height)
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height)
+    }
+
+    to {
+      height: 0
+    }
+  }
+
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+}
+
+/* Optional: utility-first container (replaces theme.container) */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  max-width: 1400px;
+  /* 2xl breakpoint */
 }
