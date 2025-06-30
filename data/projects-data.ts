@@ -7,8 +7,9 @@ const rateVanRentImagesPath = "/images/rate-van-rent";
 const blissImagesPath = "/images/bliss";
 const myDogAppImagesPath = "/images/my-dog-app";
 const skylineZiplineImagesPath = "/images/skyline-zipline";
+const spamCheckerImagePath = "/images/spam-checker";
 
-const {Python, FastAPI, Swift, Kotlin, Android, Java, OOP, TypeScript, React, NextJS, TailwindCSS, MongoDB, HTML5, CSS3, JavaScript, Bootstrap, Firebase, MySQL } = ProjectTag;
+const {Python, FastAPI, Swift, Kotlin, Android, Java, OOP, TypeScript, React, NextJS, TailwindCSS, MongoDB, HTML5, CSS3, JavaScript, Bootstrap, Firebase, MySQL, Transformers } = ProjectTag;
 
 // プロジェクトデータ - 複数リンクタイプ対応
 export const projectsData: Project[] = [
@@ -118,6 +119,25 @@ export const projectsData: Project[] = [
     tags: [TypeScript, React, NextJS, TailwindCSS, Firebase, MySQL],
     dateRange: {
       start: { year: 2025, month: 1 },
+      end: { year: 2025, month: 4 },
+    },
+  },
+  {
+    id: 7,
+    titleKey: "spamCheckerTitle",
+    descriptionKey: "spamCheckerDescription",
+    images: [
+      `${spamCheckerImagePath}/home.png`,
+      `${spamCheckerImagePath}/models.png`,
+      `${spamCheckerImagePath}/plain.png`,
+      `${spamCheckerImagePath}/weighted.png`,
+    ],
+    tags: [React, FastAPI, Transformers],
+    siteLink: "https://spam-checker-frontend.netlify.app",
+    demoLink: "https://youtu.be/VpgB5_Mwfqo",
+    githubLink: "https://github.com/TatsunoriMarumo/spam-checker",
+    dateRange: {
+      start: { year: 2025, month: 4 },
       end: { year: 2025, month: 4 },
     },
   },

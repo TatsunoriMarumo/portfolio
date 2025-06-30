@@ -13,7 +13,7 @@ export default function ProfileSection() {
     <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12 py-8 border-b border-sage-green/50">
       <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-soft-blue shadow-xl">
         <Image
-          src="/images/me.jpg"
+          src="/images/profile/me.jpg"
           alt="Profile Image"
           fill
           className="object-cover"
@@ -47,7 +47,7 @@ export default function ProfileSection() {
             <Linkedin size={20} />
           </a>
           <a
-            href="mailto:example@example.com"
+            href="mailto:t.maru0910@gmail.com"
             className="p-3 rounded-full bg-dark-navy text-light-gray hover:bg-dark-teal transition-colors duration-300 shadow-lg"
             aria-label="Email"
           >

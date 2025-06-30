@@ -2,16 +2,16 @@ import type { Translations } from "@/types/translations";
 
 export const ja: Translations = {
   // メタデータ
-  pageTitle: "ポートフォリオ | 丸茂 達則",
-  pageDescription: "丸茂達則のポートフォリオサイト",
+  pageTitle: "ポートフォリオ | 丸茂立義",
+  pageDescription: "丸茂立義のポートフォリオサイト",
 
   // ヘッダー・プロフィール
   portfolio: "ポートフォリオ",
   portfolioDescription:
     "私のプロジェクト一覧です。タグを選択してフィルタリングできます。",
-  name: "丸茂 達則",
-  jobTitle: "ソフトウェアエンジニア・AI愛好家",
-  bio: "インテリジェントなアプリケーション開発に情熱を持つソフトウェアエンジニアです。React、FastAPI、MongoDBを使用したフルスタック開発を専門とし、AI、機械学習、データセキュリティに強い関心を持っています。現在BCITでコンピュータシステム技術を学んでおり、WebテクノロジーとAIを橋渡しする効率的でユーザーフレンドリーなソリューションの作成を楽しんでいます。常に学び、常に進化しています。",
+  name: "丸茂立義",
+  jobTitle: "機械学習・フルスタックエンジニア",
+  bio: "ブリティッシュコロンビア工科大学（BCIT）のComputer Systems Technologyプログラムを卒業。TypeScriptとReactを使ったWeb開発、Pythonによる機械学習、FastAPIを用いたバックエンド開発に強みがあります。保守性・拡張性の高いシステムを、プロジェクトの目的に応じた最適な技術スタックで設計・実装することを重視しています。また、生産性やソフトウェア品質を向上させるために、AIツールや新しい技術の調査・導入にも積極的に取り組んでいます。",
 
   // フィルター
   filterByTags: "タグでフィルター",
@@ -67,4 +67,8 @@ export const ja: Translations = {
   skylineZiplineTitle: "Skyline Zipline",
   skylineZiplineDescription:
     "実習で、ジップライン企業の、点検作業をデジタル化するプロジェクトに取り組んだ。主に、テーブルコンポーネントの実装、Middlewareを用いたAuthenticationとAuthorizationの実装、セキュリティ面の強化を担当。",
+
+  spamCheckerTitle: "スパムチェッカー",
+  spamCheckerDescription:
+    "TransformerベースのDistilBERTモデルをファインチューニングし、スパムメッセージを検出するWebアプリケーションを開発。学習済みモデルはHugging Faceに公開し、FastAPIで構築したバックエンドAPIを通じて統合。フロントエンドはReact Routerを用いて構築し、アプリ全体を最初から最後まで開発・デプロイ。",
 };

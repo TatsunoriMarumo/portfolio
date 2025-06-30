@@ -7,8 +7,8 @@ export const en = {
   portfolio: "Portfolio",
   portfolioDescription: "A collection of my projects. Select tags to filter.",
   name: "Tatsunori Marumo",
-  jobTitle: "Software Engineer and AI Enthusiast",
-  bio: "I'm a software engineer passionate about building intelligent applications. I specialize in full-stack development using React, FastAPI, and MongoDB, and have strong interests in AI, machine learning, and data security. Currently studying Computer Systems Technology at BCIT, I enjoy creating efficient, user-friendly solutions that bridge web technologies and AI. Always learning, always evolving.",
+  jobTitle: "Machine Learning Engineer and Full-Stack Web Developer",
+  bio: "I'm a graduate of the Computer Systems Technology program at the British Columbia Institute of Technology, with a strong foundation in web development using TypeScript and React, machine learning with Python, and backend development with FastAPI. I specialize in building maintainable and scalable systems that follow industry best practices, and I carefully choose the most suitable tech stack based on the project's goals. I'm also passionate about exploring AI tools and emerging technologies to boost productivity and enhance software quality.",
 
   // Filters
   filterByTags: "Filter by Tags",
@@ -65,4 +65,8 @@ export const en = {
   skylineZiplineTitle: "Skyline Zipline",
   skylineZiplineDescription:
     "Participated in a project during my internship to digitize inspection operations for a zipline company. I was mainly responsible for implementing the inspection data table component, building authentication and authorization using middleware, and enhancing security across the application.",
+
+  spamCheckerTitle: "Spam Checker",
+  spamCheckerDescription:
+    "Developed a web application that detects scam messages by fine-tuning a Transformer-based DistilBERT model. The trained model was published on Hugging Face and integrated via a backend API built with FastAPI. The frontend was built using React Router, and the entire application was deployed end-to-end.",
 } as const;
