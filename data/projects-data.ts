@@ -77,7 +77,7 @@ export const projectsData: Project[] = [
     id: 4,
     titleKey: "blissTitle",
     descriptionKey: "blissDescription",
-    images: [`${blissImagesPath}/bliss.png`],
+    images: [`${blissImagesPath}/bliss.PNG`],
     tags: [Python, FastAPI, Swift],
     demoLink: "https://youtu.be/9KZRgmeT6ho",
     dateRange: {
