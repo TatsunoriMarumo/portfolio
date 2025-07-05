@@ -40,7 +40,7 @@ export default function ProfileSection() {
             <Github size={20} />
           </a>
           <a
-            href="linkedin.com/in/tatsunori-marumo-07241b2aa"
+            href="www.linkedin.com/in/tatsunori-marumo-07241b2aa"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-dark-navy text-light-gray hover:bg-dark-teal transition-colors duration-300 shadow-lg"
